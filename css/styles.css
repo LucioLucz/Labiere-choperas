@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* GENERAL */
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    color: rgb(255, 254, 254);
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 0%;
+}
+hr{
+    border: 1px solid rgb(94, 94, 94);
+}
+
+nav, li{
+    display: inline;
+    /* text-align: right; */
+}
+
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.fondo-negro{
+    background-color: black;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+
+/* ESTILOS FLEXBOX */
+#header-secciones{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+
+.nav-flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 45%;
+}
+
+.ul-flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 80%;
+    width: 500px;
+}
+
+.footer-contacto{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.iconos-contacto{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+#main-contacto{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#main-nuestras-cervezas{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    background-position: center;
+}
+
+ #main-servicios{
+     padding: 20px;
+     margin: 125px;
+     display: flex;
+     flex-flow: column nowrap ;
+     position: center;
+     justify-items: space-between;
+     height: 60%;
+    background-color: black;
+    border-radius: 5%;
+    opacity: 1;
+
+ }
+
+/* ESTILOS GRID */
+.grid-index-main{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 600px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* HEADER*/
+.logo-header-background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.logo-header{
+    max-height: 70px;
+    max-width: 300px;
+}
+
+
+/* MAIN */
+main{
+    /* height: 600px; */
+    color: rgb(255, 254, 254);
+    margin-bottom: 0%;
+}
+
+nav{
+    height: 2,5em;
+}
+
+h1{
+    /* display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between; */
+    text-align: center;
+    font-weight: bolder;
+    font-size: 4em;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 3em;
+}
+
+h1,h2{
+    text-shadow: 4px 4px 4px rgb(143, 141, 141);
+}
+
+p, li{
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+h1,h2,h3,p,a{
+    color: rgb(255, 254, 254);
+}
+
+/* BACKGROUND SECCIONES */
+
+.secciones-main{
+    background-position: center;
+    background-attachment: fixed;
+    position: center 0;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    /* height: 600px; */
+    height: 75vh;
+    width: 100%;
+    margin-right: 0;
+    animation-name: opacidad ;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+
+.secciones-main-servicios{
+    background-position: center;
+    background-attachment: fixed;
+    position: center 0;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 75vh;
+    width: 100%;
+    animation-name: opacidad ;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+
+#main-index{
+    justify-content: space-around;
+    animation-name: opacidad ;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+.img-home{
+    background-position: top;
+    position: center;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 100px;
+    background-size: 100%;
+    background-image: url("../imagenes/Secciones/home1-recorte2.jpg");
+
+}
+
+.img-nuestras-cervezas{
+    background-image: url("../imagenes/Secciones/seccion-nuestras-cervezas-der.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: 100%;
+    opacity: 1;
+    bottom: 100px;
+}
+
+.img-servicios{
+    background-color: rgb(43, 43, 43);
+    background-image: url("../imagenes/Secciones/seccion-home-servicios.jpg");
+    max-height: 100%;
+    max-width: 100%;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+}
+
+.img-galeria{
+    background-image: url("../imagenes/Secciones/seccion-galeria-recorte.jpg");
+    max-width: 100%;
+    max-height: 100%;
+    right: 0%;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-contacto{
+    background-image: url("../imagenes/Secciones/seccion-contacto-der-recorte.jpg");
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div-titulo{
+    max-width:100%;
+    height: auto;
+    text-align:center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+/* Divs de Secciones del Home */
+
+.alinear-izq{
+    left: 0%
+}
+
+.alinear-der{
+    right:0%
+}
+
+.alinear-centro{
+    left: 50%;
+    right: 50%;
+} */
+
+/* Divs NUESTRAS CERVEZAS */
+
+.main-nuestras-cervezas{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vh;
+}
+
+.divs-nuestras-cervezas{
+    font-size: 1em;
+    width: 300px;
+    height: 60%;
+    text-align:center;
+    margin: 0%;
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    background-color: rgb(255, 255, 255, 1);
+    opacity: 90%;
+    border-radius: 10%;
+}
+
+.p-cervezas{
+    color: rgb(0, 0, 0);
+}
+
+
+.img-antares{
+    max-height: 130px;
+}
+/* SERVICIOS */
+
+.display-block{
+    display: block;
+}
+
+.lista-servicios{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    width: 300px;
+    border-radius: 10%;
+}
+
+.servicios-titulo{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 600px;
+}
+/* GALERÍA */
+.galeria-main{
+        font-size: 2.5em;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+}
+ .grid-galeria{
+     display: grid;
+     grid-template-columns: repeat(4, 200px);
+     grid-template-rows: repeat(2, 200px);
+     grid-column-gap: 100px;
+     grid-row-gap: 100px;
+ }
+
+.divs-galeria{
+    border: 3px solid rgb(134, 0, 0);
+    border-radius: 3%;
+}
+
+.max-height300px{
+    max-height: 300px;
+}
+
+#foto1, #foto2, #foto3, #foto4{
+    height: 200px;
+    width: 200px;
+    margin: 3%;
+    padding: 0%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+#foto1{
+    background-image: url(../imagenes/Secciones/galeria/galeria1.jpg);
+    /* left: 10%;
+    margin-bottom:0%; */
+}
+
+#foto2{
+    background-image: url(../imagenes/Secciones/galeria/galeria2.jpg);
+    /* right: 10%;
+    margin-bottom:0%; */
+}
+
+#foto3{
+    background-image: url(../imagenes/Secciones/galeria/galeria3.jpg);
+    /* left: 10%; */
+}
+
+#foto4{
+    background-image: url(../imagenes/Secciones/galeria/galeria4.jpg);
+    /* right: 10%; */
+}
+
+
+/* CONTACTO */
+
+.contacto-padding{
+    margin: auto;
+    height: 350px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    padding: 10px;
+    border: 30px solid black;
+    border-radius: 3%;
+    opacity: 0.85;
+}
+
+.contacto-form{
+    /* height: 158px; */
+    height: 185px;
+    width: 550px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 2%;
+}
+
+input,label{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+input{
+    height: 25px;
+    width: 180px;
+}
+
+textarea{
+    height: 129px;
+}
+
+.boton-enviar{
+    text-align: center;
+    padding: left;
+    border: 2px;
+    border-radius: 5%;
+    border-color: azure;
+}
+/* Footer */
+
+footer{
+    max-height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0%;
+    padding-top:2% ;
+    position: bottom;
+}
+
+.divs-footer{
+    width: 33%;
+    height: 205px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0%;
+}
+
+
+/* links */
+
+.no-deco{
+    text-decoration: none;
+}
+
+/* GRADIENTES */
+
+.grad-header{
+    background-image: linear-gradient(to right, black, rgb(71, 71, 71));
+        /* background-image: linear-gradient(to right, rgb(71, 28, 28), rgb(75, 75, 75)); */
+
+}
+
+.grad-titulo{
+    background-image: linear-gradient( to top right, black, rgb(54, 54, 54));
+}
+
+.grad-footer{
+    background-image: linear-gradient(black, rgb(77, 77, 77));
+}
+
+.box-shadow{
+    box-shadow: 10px 10px 10px gray;
+}
+
+/* TRANSFORMACIONES y TRANSICIONES*/
+
+.hover-nav:hover{
+    text-decoration: underline solid rgb(189, 26, 26);
+}
+
+.scale:hover{
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+/* .scale-foto-galeria:hover{
+    transform: scale(2.3);
+    transition: 0.6s;
+} */
+
+h1:hover, h2:hover{
+    text-shadow: 6px 6px 6px rgba(143, 141, 141);
+    transition: 1s;
+}
+
+/* ANIMACIONES */
+
+@keyframes opacidad {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* ********** MEDIA QUERIES ********** */
+
+ /* TABLET
+@media screen and (max-width:720px) {
+    body{
+        margin: 0;
+    }
+    .contenedor-gral{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    #main-index{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    
+    /* .grid-index-main{
+        display: flex;
+    } */
+
+    /* .menu-principal1, .menu-principal2, .menu-principal3{
+        display: flex;
+        flex: column nowrap;
+        height: 100%;
+        
+    } 
+} */
