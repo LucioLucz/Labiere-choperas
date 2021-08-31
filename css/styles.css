@@ -101,6 +101,7 @@ ul{
     flex-flow: column nowrap;
     justify-content: space-around;
     align-content: center;
+    height: 90vh;
 }
 
 #main-nuestras-cervezas{
@@ -135,7 +136,7 @@ ul{
 .grid-index-main{
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 600px;
+    grid-template-rows: 100%;
     justify-items: center;
     align-items: center;
 }
@@ -207,7 +208,7 @@ h1,h2,h3,p,a{
     align-items: center;
     align-content: center;
     /* height: 600px; */
-    height: 75vh;
+    height: 85vh;
     width: 100%;
     margin-right: 0;
     animation-name: opacidad ;
@@ -224,7 +225,7 @@ h1,h2,h3,p,a{
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    height: 75vh;
+    height: 85vh;
     width: 100%;
     animation-name: opacidad ;
     animation-duration: 2.5s;
@@ -236,16 +237,17 @@ h1,h2,h3,p,a{
     animation-name: opacidad ;
     animation-duration: 2.5s;
     animation-iteration-count: 1;
+    height: 85vh;
 }
 .img-home{
-    background-position: top;
+    /* background-position: top; */
     position: center;
     max-width: 100%;
     max-height: 100%;
-    bottom: 100px;
+    /* bottom: 100px; */
     background-size: 100%;
     background-image: url("../imagenes/Secciones/home1-recorte2.jpg");
-
+    background-repeat: no-repeat;
 }
 
 .img-nuestras-cervezas{
@@ -294,7 +296,7 @@ h1,h2,h3,p,a{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 /* Divs de Secciones del Home */
@@ -552,30 +554,62 @@ h1:hover, h2:hover{
 
 /* ********** MEDIA QUERIES ********** */
 
- /* TABLET
-@media screen and (max-width:720px) {
-    body{
-        margin: 0;
-    }
-    .contenedor-gral{
+/* ********** TABLET ***************** */
+
+@media screen and (max-width: 768px) {
+    
+    .grid-index-main{
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
+        justify-content: center space-evenly;
+        height: 85vh;
+        max-width: 100vw;
+        /* padding-top:5%; */
+        padding-bottom: 5%;
     }
 
-    #main-index{
+    .img-home{
+        /* background-position: fixed; */
+        position: center;
+        max-width: 100%;
+        height: 100vh;
+        /* bottom: 100px; */
+        background-size: 100vh;
+        background-image: url("../imagenes/Secciones/home1-recorte2.jpg");
+        background-repeat: no-repeat;
+    }
+
+    .menu-principal1, .menu-principal2, .menu-principal3{
+        margin: 0%;
+        
+    }
+}
+
+
+/* *************** LANDSCAPE *************** */
+
+@media all and (max-width: 768px) and (orientation : LANDSCAPE) {
+    
+    .grid-index-main{
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
+        flex-flow: column wrap;
+        justify-content: center space-evenly;
+        height: 85vh;
+        max-width: 100vw;
+        padding-bottom: 0%;
+        background-position: center;
+        background-size: 100%;
     }
     
-    /* .grid-index-main{
-        display: flex;
-    } */
-
-    /* .menu-principal1, .menu-principal2, .menu-principal3{
-        display: flex;
-        flex: column nowrap;
-        height: 100%;
-        
-    } 
-} */
+    
+    .img-home{
+        background-position: center ;
+        position: center;
+        max-width: 100vw;
+        height: 100vh;
+        /* bottom: 100px; */
+        background-size: 100vh;
+        background-image: url("../imagenes/Secciones/home1-recorte2.jpg");
+        background-repeat: no-repeat;
+        margin: 0;
+}
