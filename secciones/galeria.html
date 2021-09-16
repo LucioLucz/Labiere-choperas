@@ -16,10 +16,8 @@
         <!-- SCSS -->
         <link rel="stylesheet" href="../css/destino.css">
         <!--LIGHTBOX-->
-        <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="js/prototype.js"></script>
-<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
+        <link href="..\node_modules\lightbox2\dist\css\lightbox.min.css" rel="stylesheet"/>
+
         <!-- TITULO tab -->
         <title>LA BIERE - Alquiler de choperas</title>
     </head>
@@ -112,10 +110,13 @@
                     <span class="visually-hidden">Next</span>
                     </button>
                 </div>  -->
-                <div class="row">
-                    <div class="column">
-                        <a href="images/image-1.jpg" title="Título de la imagen 1">Imagen 1</a>
-                    </div>
+                <div class="galeria">
+                    <a href="..\imagenes\Secciones\galeria\galeria1.jpg" data-lightbox="galeria" data-alt="My caption"><img src="..\imagenes\Secciones\galeria\galeria1-small.jpg" alt=""></a>
+                    <a href="..\imagenes\Secciones\galeria\galeria2.jpg" data-lightbox="galeria"><img src="..\imagenes\Secciones\galeria\galeria2-small.jpg" alt=""></a>
+                    <a href="..\imagenes\Secciones\galeria\galeria3.jpg" data-lightbox="galeria"><img src="..\imagenes\Secciones\galeria\galeria3-small.jpg" alt=""></a>
+                    <a href="..\imagenes\Secciones\galeria\galeria4.jpg" data-lightbox="galeria"><img src="..\imagenes\Secciones\galeria\galeria4-small.jpg" alt=""></a>                 
+                    <a href="..\imagenes\Secciones\galeria\galeria5.jpg" data-lightbox="galeria"><img src="..\imagenes\Secciones\galeria\galeria5-small.jpg" alt=""></a>                 
+                    <a href="..\imagenes\Secciones\galeria\galeria6.jpeg" data-lightbox="galeria"><img src="..\imagenes\Secciones\galeria\galeria6-small.jpg" alt=""></a>                 
                 </div>
         </main>
 
@@ -157,6 +158,11 @@
                 </div>
     
             </footer>
+            <!--BOOTSTRAP-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+            <!--LIGHTBOX-->
+            <script src="..\node_modules\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
+            <!--Transiciones Fancybox-->
+            <script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
     </body>
 </html>

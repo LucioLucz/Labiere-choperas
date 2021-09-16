@@ -337,6 +337,15 @@ h1,h2,h3,p,a{
     background-repeat: no-repeat;
 }
 
+.div-img-fancybox{
+    max-width: 300px;
+}
+
+.img-fancybox{
+    width: 300px;
+    max-width: 300px;
+}
+
 .icono-ubicacion, .icono-wp, .icono-ig, .icono-fb{
     max-height: 4vh;
     max-width: 4vw;
@@ -502,6 +511,14 @@ align-items: center;
         flex-flow: row wrap;
         justify-content: center;
 }
+
+.galeria{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+/*
  .grid-galeria{
      display: grid;
      grid-template-columns: repeat(4, 200px);
@@ -513,11 +530,7 @@ align-items: center;
 .divs-galeria{
     border: 3px solid rgb(134, 0, 0);
     border-radius: 3%;
-}
-
-.max-height300px{
-    max-height: 300px;
-}
+} */
 
 #carousel-max{
     display: flex;
