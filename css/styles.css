@@ -889,7 +889,6 @@ body{
 
 @media screen and (max-width:400px){
     .galeria{
-        margin-top: 5%;
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -910,9 +909,8 @@ body{
     }
 
     .galeria{
-        margin-top: 5%;
+        margin-top: 3%;
         flex-direction: column;
-        max-height: 100%;
         flex-wrap: wrap;
         overflow-x: scroll;
     }
