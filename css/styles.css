@@ -266,7 +266,7 @@ h1,h2,h3,p,a{
     background-position: center;
     position: center 0;
     display:flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -277,6 +277,8 @@ h1,h2,h3,p,a{
     animation-name: opacidad ;
     animation-duration: 2.5s;
     animation-iteration-count: 1;
+    overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 #main-index{
@@ -515,8 +517,20 @@ align-items: center;
 .galeria{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    max-height: 360px;
+    padding: 1%;
+    overflow-wrap: auto;
+}
+
+.margin-lightbox{
+    margin: 1%;
 }
 /*
  .grid-galeria{
@@ -873,6 +887,14 @@ body{
     }
 }
 
+@media screen and (max-width:400px){
+    .galeria{
+        margin-top: 5%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width:320px){
     #boton-dropdown{
         font-size: 0.6rem;
@@ -885,5 +907,13 @@ body{
     .logo-header{
         width: 100%;
         height: auto;
+    }
+
+    .galeria{
+        margin-top: 5%;
+        flex-direction: column;
+        max-height: 100%;
+        flex-wrap: wrap;
+        overflow-x: scroll;
     }
 }
