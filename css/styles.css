@@ -56,6 +56,10 @@ li{
     display:inline-block;
 }
 
+.mapa{
+    margin: auto;
+    width: 50%;
+}
 /* ESTILOS FLEXBOX */
 #header-secciones{
     display: flex;
@@ -247,6 +251,7 @@ h1,h2,h3,p,a{
 .secciones-main-servicios{
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -313,12 +318,26 @@ h1,h2,h3,p,a{
 .img-servicios{
     background-color: rgb(43, 43, 43);
     background-image: url("../imagenes/Secciones/seccion-home-servicios.jpg");
+    height: 100vh;
     max-height: 100%;
+    width: 100vw;
     max-width: 100%;
+    position: center;
     background-size: cover;
     background-blend-mode: screen;
     background-repeat: no-repeat;
 }
+
+/*.img-home{
+    position: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    background-size: cover;
+    background-image: url("../imagenes/Secciones/home1-recorte2.jpg");
+    background-repeat: no-repeat;
+}*/
 
 .img-galeria{
     background-image: url("../imagenes/Secciones/seccion-galeria-recorte-2.jpg");
@@ -647,7 +666,6 @@ textarea{
 /* Footer */
 
 footer{
-    max-height: 100%;
     max-width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -885,12 +903,20 @@ body{
     #boton-dropdown{
         font-size: 0.7rem;
     }
+
+    .p-direccion{
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width:400px){
     .galeria{
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .p-direccion{
+        font-size: 0.7rem;
     }
 }
 
@@ -913,5 +939,9 @@ body{
         flex-direction: column;
         flex-wrap: wrap;
         overflow-x: scroll;
+    }
+
+    .p-direccion{
+        font-size: 0.6rem;
     }
 }
