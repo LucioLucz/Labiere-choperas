@@ -1,0 +1,28 @@
+{
+  "name": "labiere-github",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/origen.scss css/destino.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucioLucz/Labiere-choperas.git"
+  },
+  "author": "LucioLucz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucioLucz/Labiere-choperas/issues"
+  },
+  "homepage": "https://github.com/LucioLucz/Labiere-choperas#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "lightbox2": "^2.11.3"
+  },
+  "description": ""
+}

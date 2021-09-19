@@ -1,0 +1,167 @@
+:root {
+    font-size: 16px;
+}
+// ******************** VARIABLES ********************
+$bgc: black;
+$bgc-w:rgba(255, 255, 255, 0.80);
+$h1:4rem;
+$h2:3rem;
+$h3:1rem;
+$desktop:769px;
+$tablet:768px;
+$mobile:320px;
+
+// ******************** ESTILOS  ********************
+
+// Seccion SERVICIOS
+.section-servicios{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contenedor-ico-p{
+    display: flex;
+    flex-direction: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    max-width: 15%;
+    max-height: 350px;
+    background-color: $bgc-w;
+    background-position: fixed;
+    padding: 1%;
+    border-radius: 1em;
+    .div-iconos-servicios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        .iconos-servicios{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .div-p-servicios{
+        max-width: 100%;
+        p{color: black;
+         margin: 0%;}
+    }
+}
+
+// Seccion NUESTRAS CERVEZAS
+#main-nuestras-cervezas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 1%;
+    height: 100%;
+    max-height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    .divs-nuestras-cervezas{
+        max-width: 40%;
+        min-width: 100px;
+        max-height: 60%;
+        height: 60%;
+        text-align:center;
+        margin: 0%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.80);
+        opacity: 90%;
+        border-radius: 1rem;
+        padding:2%;
+        box-sizing: border-box;
+        .div-logo-goyeneche{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1%;
+            .logo-goyeneche{
+                max-width: 100%;
+            }
+        }
+        .div-logo-antares{
+            @extend .div-logo-goyeneche;
+            .logo-antares{
+                max-width: 100%;
+            }
+        }
+        .divs-nuestras-cervezas-p{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            justify-items: center;
+            width: 100%;
+            margin: 0%;
+            }
+            .p-cervezas{
+                color: rgb(0, 0, 0);
+                font-size: 1rem;
+                padding: 1%;
+                margin: auto;
+            }
+    }
+}
+
+// ******************** MEDIA QUERIES ********************
+
+@media screen and(min-width:$desktop){
+    h1{font-size: $h1;}
+    h2{font-size: $h2;}
+    h3{font-size: $h3;}
+}
+
+@media screen and (max-width:$tablet){
+    h1{font-size: $h1 - 1.8;}
+    h2{font-size: $h2 - 1.8;}
+    h3{font-size: $h3 - 0.5;}
+    .divs-nuestras-cervezas{
+        .logo-antares, .logo-goyeneche{
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:500px){
+    h1{font-size: $h1 - 2;}
+    .divs-nuestras-cervezas{
+        max-height: 70%;
+        .divs-nuestras-cervezas-p{
+            .p-cervezas{
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile){
+    h1{font-size: $h1 - 2.6;}
+    h2{font-size: $h2 - 2;}
+    h3{font-size: $h3 - 0.3;}
+    #main-nuestras-cervezas{
+        flex-direction: column;
+        .divs-nuestras-cervezas{
+            max-width: 40%;
+            min-width: 59px;
+            max-height: 45%;
+            .logo-antares, .logo-goyeneche{
+                max-width:20vw ;
+            }
+            .divs-nuestras-cervezas-p{
+                .p-cervezas{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+    
+}

@@ -5,9 +5,7 @@
 /* GENERAL */
 body,html{
     max-width: 100%;
-    /*max-height: 100%;*/
     max-height:100vh;
-    overflow-x:scroll
 }
 
 body{
@@ -121,7 +119,6 @@ ul{
 
 #main-nuestras-cervezas{
     display: flex;
-    /* flex-flow: row nowrap; */
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: center;
@@ -150,9 +147,7 @@ ul{
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
-    /* margin: auto; */
     margin-left: 1%;
-    /*height: 60%;*/
     width: 25%;
     max-height: 70%;
     max-width: 25%;
@@ -163,8 +158,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    /* max-height: 50%; */
-    max-width: 70%
+    max-width: 70%;
 }
 
 .dropdown{
@@ -178,7 +172,6 @@ ul{
     margin: auto;
     font-size: 0.9rem;
 }
-
 
 .icon{
     display: none;
@@ -412,15 +405,14 @@ h1,h2,h3,p,a{
     font-size: 1rem;
     max-width: 40%;
     min-width: 250px;
-    max-height: 50%;
+    max-height: 55%;
     /* min-height: 303px; */
-    height: 50%;
+    height: 55%;
     text-align:center;
     margin: 0%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
-    /* align-items: baseline; */
     background-color: rgb(255, 255, 255, 0.80);
     opacity: 90%;
     border-radius: 1rem;
@@ -428,7 +420,7 @@ h1,h2,h3,p,a{
     box-sizing: border-box;
 }
 
-.divs-nuestras-cervezas-interiores{
+.divs-nuestras-cervezas-p{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -442,16 +434,11 @@ display: flex;
 flex-flow: column nowrap;
 justify-content: space-evenly;
 align-items: center;
+padding: 1%;
 }
 
 .logo-goyeneche{
     max-width: 100%;
-}
-
-.p-cervezas{
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
-    margin: 0%;
 }
 
 .logo-antares{
@@ -673,7 +660,7 @@ footer{
     margin-bottom: 0%;
     padding-top:2% ;
     position: bottom;
-    overflow-x:scroll
+/*  overflow-x:scroll*/
 }
 
 .divs-footer{
