@@ -18,6 +18,14 @@ $mobile:320px;
 .section-servicios{
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    margin-top: 0%;
+    padding-top: 0%;
     .secciones-main-servicios{
         background-position: center;
         background-attachment: fixed;
@@ -33,39 +41,40 @@ $mobile:320px;
         animation-iteration-count: 1;
         height: 85vh;
         padding: 1%;
+        .contenedor-ico-p{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 17%;
+            max-width: 17%;
+            max-height: 350px;
+            background-color: $bgc-w;
+            background-position: fixed;
+            padding: 1%;
+            border-radius: 1em;
+            .div-iconos-servicios{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                max-width: 100%;
+                .iconos-servicios{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            .div-p-servicios{
+                max-width: 100%;
+                p{color: black;
+                 margin: 0%;}
+            }
+        }
     }
 }
 
-.contenedor-ico-p{
-    display: flex;
-    flex-direction: flex;
-    flex-wrap: wrap;
-    width: 15%;
-    max-width: 15%;
-    max-height: 350px;
-    background-color: $bgc-w;
-    background-position: fixed;
-    padding: 1%;
-    border-radius: 1em;
-    .div-iconos-servicios{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 100%;
-        .iconos-servicios{
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            max-width: 100%;
-        }
-    }
-    .div-p-servicios{
-        max-width: 100%;
-        p{color: black;
-         margin: 0%;}
-    }
-}
+
 
 // Seccion NUESTRAS CERVEZAS
 #main-nuestras-cervezas{
@@ -150,7 +159,6 @@ $mobile:320px;
             }
         }
     }
-    
 }
 
 @media screen and (min-width:321px) and (max-width:500px){
@@ -165,6 +173,10 @@ $mobile:320px;
                 }
             }
         }
+    }
+    #div-servicios-col{
+        display: flex;
+        flex-flow: column nowrap;
     }
 }
 

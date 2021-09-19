@@ -241,25 +241,6 @@ h1,h2,h3,p,a{
     animation-iteration-count: 1;
 }
 
-.secciones-main-servicios{
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: space-around;
-    align-content: center;
-    /* height: 100vh; */
-    /* max-height: 75vh; */
-    width: 100%;
-    animation-name: opacidad ;
-    animation-duration: 2.5s;
-    animation-iteration-count: 1;
-    height: 85vh;
-    padding: 1%;
-}
-
 .secciones-main-galeria{
     background-position: center;
     position: center 0;
@@ -309,16 +290,19 @@ h1,h2,h3,p,a{
 }
 
 .img-servicios{
+    position: center;
     background-color: rgb(43, 43, 43);
-    background-image: url("../imagenes/Secciones/seccion-home-servicios.jpg");
+    background-blend-mode: screen;
     height: 100vh;
     max-height: 100%;
     width: 100vw;
     max-width: 100%;
-    position: center;
+    background-position: center;
     background-size: cover;
-    background-blend-mode: screen;
+    background-image: url("../imagenes/Secciones/seccion-home-servicios.jpg");
     background-repeat: no-repeat;
+    margin-top: 0%;
+    padding-top: 0%;
 }
 
 /*.img-home{
@@ -445,16 +429,7 @@ padding: 1%;
     max-width: 100%;
 }
 /******************** SERVICIOS********************/
-.section-servicios{
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    height: 100%;
-    background-position: fixed;
-    background-size: 100%;
-    background-attachment: fixed;
-    overflow-y: scroll;
-}
+
 
 .contenedor-ico-p{
     display: flex;
