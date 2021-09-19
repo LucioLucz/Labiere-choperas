@@ -54,12 +54,6 @@ li{
     display:inline-block;
 }
 
-.mapa{
-    margin: 0%;
-    width: 50%;
-    padding: 10%;
-    max-height: 90%;
-}
 /* ESTILOS FLEXBOX */
 #header-secciones{
     display: flex;
@@ -307,17 +301,6 @@ h1,h2,h3,p,a{
     padding-top: 0%;
 }
 
-/*.img-home{
-    position: center;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    max-height: 100%;
-    background-size: cover;
-    background-image: url("../imagenes/Secciones/home1-recorte2.jpg");
-    background-repeat: no-repeat;
-}*/
-
 .img-galeria{
     background-image: url("../imagenes/Secciones/seccion-galeria-recorte-2.jpg");
     max-width: 100%;
@@ -432,20 +415,19 @@ padding: 1%;
 }
 /******************** SERVICIOS********************/
 
-
 .contenedor-ico-p{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 15%;
     max-width: 20%;
-    /* height: 30%;*/
     height: auto;
     max-height: 360px;
     background-color: rgb(122, 122, 122);
     background-position: fixed;
     margin: 1%;
 }
+
 .div-iconos-servicios{
     display: flex;
     flex-direction: row;
@@ -466,27 +448,12 @@ padding: 1%;
     max-width: 100%;
 }
 
-/* .lista-servicios{
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    max-height: 100%;
-    justify-content: center;
-    align-items: center;
-    max-width: 250px;
-    border-radius: 10%;
-    font-size: 1rem;
-} */
-
 .servicios-titulo{
     margin-top: 0px;
     margin-bottom: 0px;
     height: 600px;
 }
 
-/* .p-servicios{
-    font-size: 1rem;
-} */
 /* GALERÍA */
 .galeria-main{
         font-size: 2rem;
@@ -515,19 +482,6 @@ padding: 1%;
 .margin-lightbox{
     margin: 1%;
 }
-/*
- .grid-galeria{
-     display: grid;
-     grid-template-columns: repeat(4, 200px);
-     grid-template-rows: repeat(2, 200px);
-     grid-column-gap: 100px;
-     grid-row-gap: 100px;
- }
-
-.divs-galeria{
-    border: 3px solid rgb(134, 0, 0);
-    border-radius: 3%;
-} */
 
 #carousel-max{
     display: flex;
@@ -553,24 +507,6 @@ padding: 1%;
     background-size: 100%;
 }
 
-#foto1{
-    background-image: url(../imagenes/Secciones/galeria/galeria1.jpg);
-}
-
-#foto2{
-    background-image: url(../imagenes/Secciones/galeria/galeria2.jpg);
-}
-
-#foto3{
-    background-image: url(../imagenes/Secciones/galeria/galeria3.jpg);
-}
-
-#foto4{
-    background-image: url(../imagenes/Secciones/galeria/galeria4.jpg);
-}
-
-
-
 /* Footer */
 
 footer{
@@ -581,7 +517,6 @@ footer{
     margin-bottom: 0%;
     padding-top:2% ;
     position: bottom;
-/*  overflow-x:scroll*/
 }
 
 .divs-footer{
@@ -614,10 +549,6 @@ footer{
 .grad-footer{
     background-image: linear-gradient(black, rgb(77, 77, 77));
 }
-
-/* .box-shadow{
-    box-shadow: 10px 10px 10px gray;
-} */
 
 /* TRANSFORMACIONES y TRANSICIONES*/
 
@@ -675,125 +606,6 @@ h1:hover, h2:hover{
         padding-bottom: 5%;
     }
 }
-/*
-    .img-home{
-        position: center;
-        max-width: 100%;
-        height: 100vh;
-        background-size: 100vh;
-        background-image: url("../imagenes/Secciones/home1-recorte2.jpg");
-        background-repeat: no-repeat;
-    }
-
-    .menu-principal1, .menu-principal2, .menu-principal3{
-        margin: 0%;
-        
-    }
-*/
-    /* #main-nuestras-cervezas{
-        flex-direction: column;
-    } */
-
-/*
-    .divs-nuestras-cervezas{
-        min-width: 60%;
-    }
-*/
-    /* .logo-antares, .logo-goyeneche{ */
-         /* max-width: 100%; */
-        /* background-position: center} */
-        /* min-height: 30%; */
-    
-    /* } */
-    /* .p-cervezas{
-        font-size: 0.8rem;
-    } */
-
-/*
-    .p{
-        font-weight: normal;
-        font-size: 0.8em;
-    } */
-    /* h1{
-        font-size: 2.2rem;
-    }
-
-    h2{
-        font-size: 1.2rem;
-    }
-
-    h3{
-        font-size: 1rem;
-    } 
-}*/
-
-
-/* *************** LANDSCAPE *************** */
-
-/* @media all and (max-width: 768px) and (orientation : LANDSCAPE) {
-    
-body{
-    background-size: 110%;
-    margin: 0;
-    margin-right: 0;
-}
-
-.dropdown{
-    display: flex;
-    flex-direction: row;
-    align-content: right;
-}
-
-    .grid-index-main{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center space-evenly;
-        height: 95vh;
-        width: 100vw;
-        max-width: 100vw;
-        padding-bottom: 0%;
-        background-position: center;
-        background-size: 110%;
-    }
-    
-    
-    .img-home{
-        background-position: center ;
-        position: contain;
-        width: 100vw;
-        max-width: 100vw;
-        height: 110vh;
-        background-size: 110%;
-        background-image: url("../imagenes/Secciones/home1-recorte2.jpg");
-        background-repeat: no-repeat;
-        margin: 0;
-        padding: 0;
-    }
-} */
-
-/* ********** MEDIA QUERIES - CONTACTO ********** */
-
-/* @media screen and (max-width: 600px){
-    .p-contacto, label{
-        font-size: 0.8rem;
-    }
-}
-@media screen and (max-width: 480px){
-    .contacto-padding, .contacto-form{
-        flex-direction: column;
-    }
-
-    .contacto-padding{
-        margin: 0%;
-        max-height: 90%;
-    }
-
-    .textarea-contacto{
-        max-width: 75%;
-    }
-} */
-
-
 
 /*************** MOBILE *************/
 
