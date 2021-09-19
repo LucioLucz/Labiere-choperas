@@ -4,6 +4,21 @@
 .section-servicios {
   display: flex;
   flex-flow: row wrap; }
+  .section-servicios .secciones-main-servicios {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    align-content: center;
+    width: 100%;
+    animation-name: opacidad;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    height: 85vh;
+    padding: 1%; }
 
 .contenedor-ico-p {
   display: flex;
@@ -90,6 +105,8 @@
   h2 {
     font-size: 3rem; }
   h3 {
+    font-size: 1rem; }
+  p {
     font-size: 1rem; } }
 
 @media screen and (max-width: 768px) {
@@ -99,12 +116,16 @@
     font-size: 1.2rem; }
   h3 {
     font-size: 0.5rem; }
+  p {
+    font-size: 0.8rem; }
   #main-nuestras-cervezas .divs-nuestras-cervezas .logo-antares, #main-nuestras-cervezas .divs-nuestras-cervezas .logo-goyeneche {
     width: 80%; } }
 
 @media screen and (min-width: 321px) and (max-width: 500px) {
   h1 {
     font-size: 2rem; }
+  p {
+    font-size: 0.7rem; }
   #main-nuestras-cervezas .divs-nuestras-cervezas {
     max-height: 70%; }
     #main-nuestras-cervezas .divs-nuestras-cervezas .divs-nuestras-cervezas-p .p-cervezas {
@@ -117,6 +138,8 @@
     font-size: 1rem; }
   h3 {
     font-size: 0.7rem; }
+  p {
+    font-size: 0.6rem; }
   #main-nuestras-cervezas {
     flex-direction: column; }
     #main-nuestras-cervezas .divs-nuestras-cervezas {

@@ -7,6 +7,7 @@ $bgc-w:rgba(255, 255, 255, 0.80);
 $h1:4rem;
 $h2:3rem;
 $h3:1rem;
+$p:1rem;
 $desktop:769px;
 $tablet:768px;
 $mobile:320px;
@@ -17,6 +18,22 @@ $mobile:320px;
 .section-servicios{
     display: flex;
     flex-flow: row wrap;
+    .secciones-main-servicios{
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: space-around;
+        align-content: center;
+        width: 100%;
+        animation-name: opacidad ;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        height: 85vh;
+        padding: 1%;
+    }
 }
 
 .contenedor-ico-p{
@@ -118,12 +135,14 @@ $mobile:320px;
     h1{font-size: $h1;}
     h2{font-size: $h2;}
     h3{font-size: $h3;}
+    p{font-size:$p}
 }
 
 @media screen and (max-width:$tablet){
     h1{font-size: $h1 - 1.8;}
     h2{font-size: $h2 - 1.8;}
     h3{font-size: $h3 - 0.5;}
+    p{font-size: $p - 0.2;}
     #main-nuestras-cervezas{
         .divs-nuestras-cervezas{
             .logo-antares, .logo-goyeneche{
@@ -136,6 +155,7 @@ $mobile:320px;
 
 @media screen and (min-width:321px) and (max-width:500px){
     h1{font-size: $h1 - 2;}
+    p{font-size: $p - 0.3;}
     #main-nuestras-cervezas{
         .divs-nuestras-cervezas{
             max-height: 70%;
@@ -152,6 +172,7 @@ $mobile:320px;
     h1{font-size: $h1 - 2.6;}
     h2{font-size: $h2 - 2;}
     h3{font-size: $h3 - 0.3;}
+    p{font-size: $p - 0.4;}
     #main-nuestras-cervezas{
         flex-direction: column;
         .divs-nuestras-cervezas{
