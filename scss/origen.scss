@@ -435,3 +435,10 @@ footer{
     }
 }
 
+@media screen and (max-width:150px){
+    h1{font-size: $h1 - 2.9;}
+    h2{font-size: $h2 - 2.2;}
+    h3{font-size: $h3 - 1.9}
+    p, input, label{font-size: $p - 0.4;}
+}
+
