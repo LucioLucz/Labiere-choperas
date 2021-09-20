@@ -156,6 +156,26 @@ textarea {
   width: 95%;
   max-height: 120px; }
 
+/* Footer */
+footer {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 0%;
+  padding-top: 2%;
+  position: bottom; }
+
+.divs-footer {
+  width: 33%;
+  max-height: 75%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 0%; }
+
+.p-direccion {
+  font-size: 1rem; }
+
 .mapa {
   margin: 0%;
   width: 75%;
@@ -168,8 +188,8 @@ textarea {
   h2 {
     font-size: 3rem; }
   h3 {
-    font-size: 1rem; }
-  p, input, label {
+    font-size: 2rem; }
+  p, .p-direccion, input, label {
     font-size: 1rem; } }
 
 @media screen and (max-width: 768px) {
@@ -178,20 +198,22 @@ textarea {
   h2 {
     font-size: 1.2rem; }
   h3 {
-    font-size: 0.5rem; }
-  p, input, label {
+    font-size: 1.5rem; }
+  p, .p-direccion, input, label {
     font-size: 0.8rem; }
   #main-nuestras-cervezas .divs-nuestras-cervezas .logo-antares, #main-nuestras-cervezas .divs-nuestras-cervezas .logo-goyeneche {
     width: 80%; }
   .mapa {
     margin: 0%;
-    width: 50%;
+    width: 80%;
     padding: 12%;
     max-height: 80%; } }
 
 @media screen and (min-width: 321px) and (max-width: 500px) {
   h1 {
     font-size: 2rem; }
+  h3 {
+    font-size: 1rem; }
   p, input, label {
     font-size: 0.7rem; }
   #main-nuestras-cervezas .divs-nuestras-cervezas {

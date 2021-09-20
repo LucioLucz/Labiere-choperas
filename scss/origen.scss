@@ -6,7 +6,7 @@ $bgc: black;
 $bgc-w:rgba(255, 255, 255, 0.80);
 $h1:4rem;
 $h2:3rem;
-$h3:1rem;
+$h3:2rem;
 $p:1rem;
 $desktop:769px;
 $tablet:768px;
@@ -198,7 +198,31 @@ textarea{
     max-height: 120px;
 }
 
-// Seccion FOOTER
+// FOOTER
+
+/* Footer */
+
+footer{
+    max-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0%;
+    padding-top:2% ;
+    position: bottom;
+}
+
+.divs-footer{
+    width: 33%;
+    max-height: 75%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0%;
+}
+
+.p-direccion{
+    font-size: 1rem;
+}
 
 .mapa{
     margin: 0%;
@@ -213,14 +237,14 @@ textarea{
     h1{font-size: $h1;}
     h2{font-size: $h2;}
     h3{font-size: $h3;}
-    p, input, label{font-size:$p}
+    p, .p-direccion, input, label{font-size:$p}
 }
 
 @media screen and (max-width:$tablet){
     h1{font-size: $h1 - 1.8;}
     h2{font-size: $h2 - 1.8;}
     h3{font-size: $h3 - 0.5;}
-    p, input, label{font-size: $p - 0.2;}
+    p, .p-direccion, input, label{font-size: $p - 0.2;}
     #main-nuestras-cervezas{
         .divs-nuestras-cervezas{
             .logo-antares, .logo-goyeneche{
@@ -230,7 +254,7 @@ textarea{
     }
     .mapa{
         margin: 0%;
-        width: 50%;
+        width: 80%;
         padding: 12%;
         max-height: 80%;
     }
@@ -238,6 +262,7 @@ textarea{
 
 @media screen and (min-width:321px) and (max-width:500px){
     h1{font-size: $h1 - 2;}
+    h3{font-size: $h3 - 1}
     p, input, label{font-size: $p - 0.3;}
     #main-nuestras-cervezas{
         .divs-nuestras-cervezas{
@@ -298,7 +323,7 @@ textarea{
 @media screen and (max-width: $mobile){
     h1{font-size: $h1 - 2.6;}
     h2{font-size: $h2 - 2;}
-    h3{font-size: $h3 - 0.3;}
+    h3{font-size: $h3 - 1.3;}
     p, input, label{font-size: $p - 0.4;}
     #main-nuestras-cervezas{
         flex-direction: column;
