@@ -249,6 +249,81 @@ textarea{
             }
         }
     }
+    .section-servicios{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 0%;
+        padding-top: 0%;
+        .secciones-main-servicios{
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            display:flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            align-items: space-around;
+            align-content: space-around;
+            justify-items: space-around;
+            width: 100%;
+            animation-name: opacidad ;
+            animation-duration: 2.5s;
+            animation-iteration-count: 1;
+            height: 85vh;
+            max-height: 85vh;
+            padding: 1%;
+            .contenedor-ico-p{
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                justify-items: center;
+                width: 95%;
+                max-width: 95%;
+                max-height: 22%;
+                background-color: $bgc-w;
+                background-position: fixed;
+                padding: 0.1%;
+                border-radius: 1em;
+                .div-iconos-servicios{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-items: center;
+                    width: 15%;
+                    max-width: 15%;
+                    padding: 1%;
+                    margin: auto;
+                    .iconos-servicios{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        width: 90%;
+                        max-height: 90%;
+                        padding: 1%;
+                    }
+                }
+                .div-p-servicios{
+                    max-width: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-end;
+                    width: 75%;
+                    max-width: 80%;
+                    p{color: black;
+                     margin: 0%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    width: 100%;
+                    justify-content: flex-start;
+                    align-items: center;}
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $mobile){
