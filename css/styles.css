@@ -90,16 +90,11 @@ ul{
     width: 500px
 }
 
-.footer-contacto{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-}
-
 .iconos-contacto{
     display: flex;
     flex-direction: row nowrap;
     justify-content: space-around;
+    width: 100%;
     margin-top: 2em;
     max-height: 100%;
     max-width: 100%;

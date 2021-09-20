@@ -171,16 +171,31 @@ footer {
   max-height: 75%;
   text-align: center;
   display: inline-block;
+  justify-content: space-between;
+  align-content: center;
+  justify-items: center;
   margin-top: 0%; }
-
-.p-direccion {
-  font-size: 1rem; }
 
 .mapa {
   margin: 0%;
   width: 75%;
-  padding: 5%;
   max-height: 100%; }
+
+.footer-contacto {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  justify-items: center;
+  align-content: center; }
+
+.iconos-contacto {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 8%;
+  max-height: 100%;
+  max-width: 100%; }
 
 @media screen and (min-width: 769px) {
   h1 {
@@ -316,5 +331,29 @@ footer {
             justify-content: flex-start;
             align-items: center;
             padding-right: 2%; }
-  .mapa {
-    display: none; } }
+  footer {
+    flex-flow: column nowrap;
+    padding: auto;
+    align-items: center; }
+    footer .divs-footer {
+      width: 75%;
+      max-height: 75%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      align-content: center;
+      margin-top: 0%; }
+      footer .divs-footer .footer-contacto {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-content: space-between; }
+        footer .divs-footer .footer-contacto .iconos-contacto {
+          display: flex;
+          flex-direction: row nowrap;
+          justify-content: space-around;
+          align-content: space-around;
+          margin: auto;
+          max-height: 100%;
+          max-width: 100%; } }
