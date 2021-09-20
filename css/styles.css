@@ -299,16 +299,6 @@ h1,h2,h3,p,a{
 .img-galeria{
     background-image: url("../imagenes/Secciones/seccion-galeria-recorte.jpg");
     background-size: cover;
-    /*max-width: 100%;
-    max-height: 100vh;
-    height: 100vh;
-    position: center;
-    background-attachment: fixed;
-    background-position:center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0%;
-    padding: 0%;*/
 }
 
 .img-contacto{
