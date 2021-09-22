@@ -252,14 +252,14 @@ footer{
     h1{font-size: $h1;}
     h2{font-size: $h2;}
     h3{font-size: $h3;}
-    p, .p-direccion, input, label{font-size:$p}
+    p, .p-direccion, input, label, #a-dropdown{font-size:$p}
 }
 
 @media screen and (max-width:$tablet){
     h1{font-size: $h1 - 1.8;}
     h2{font-size: $h2 - 1.8;}
     h3{font-size: $h3 - 0.5;}
-    p, .p-direccion, input, label{font-size: $p - 0.2;}
+    p, .p-direccion, input, label, #a-dropdown{font-size: $p - 0.2;}
     #main-nuestras-cervezas{
         .divs-nuestras-cervezas{
             .logo-antares, .logo-goyeneche{
@@ -278,7 +278,7 @@ footer{
 @media screen and (min-width:321px) and (max-width:500px){
     h1{font-size: $h1 - 2;}
     h3{font-size: $h3 - 1}
-    p, input, label{font-size: $p - 0.3;}
+    p, input, label, #a-dropdown{font-size: $p - 0.3;}
     #main-nuestras-cervezas{
         .divs-nuestras-cervezas{
             max-height: 70%;
@@ -288,6 +288,12 @@ footer{
                 }
             }
         }
+    }
+    .dropdown{
+        padding: 2%;
+    }
+    #boton-dropdown{
+        font-size: 0.8rem;
     }
     .section-servicios{
         display: flex;
@@ -339,7 +345,23 @@ footer{
     h1{font-size: $h1 - 2.6;}
     h2{font-size: $h2 - 2;}
     h3{font-size: $h3 - 1.3;}
-    p, input, label{font-size: $p - 0.4;}
+    p, input, label, #a-dropdown{font-size: $p - 0.4;}
+    .dropdown{
+        padding: 4%;
+    }
+    #boton-dropdown{
+        font-size: 0.7rem;
+    }
+    .logo-header-background{
+        width: 100%;
+        //max-width: 27%;
+        max-height: 100%;
+        }
+    .logo-header{
+    width: 100%;
+    max-width: 100%;
+    //height: auto;
+    max-height: 100%;}
     #main-nuestras-cervezas{
         flex-direction: column;
         .divs-nuestras-cervezas{
@@ -400,6 +422,59 @@ footer{
             }
         }
     }
+}
+@media screen and (max-width:150px){
+        h1{font-size: $h1 - 2.9;}
+        h2{font-size: $h2 - 2.2;}
+        h3{font-size: $h3 - 1.9}
+        p, input, label, #a-dropdown{font-size: $p - 0.4;}
+        .dropdown{
+            padding: 8%;
+        }
+        #boton-dropdown{
+            font-size: 0.6rem;
+        }
+        .contacto-padding{
+            margin: auto;
+            max-height: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border: 30px;
+            border-radius: 1rem;
+            opacity: 0.85;
+        }
+        .logo-header-background{
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            }
+        .logo-header{
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+}
+@media screen and (max-width:100px){
+    h1{font-size: $h1 - 3;}
+        h2{font-size: $h2 - 2.4;}
+        h3{font-size: $h3 - 2}
+        p, input, label, #a-dropdown{font-size: $p - 0.6;}
+    #header-secciones{
+        justify-content: center;
+    }
+    .logo-header-background{
+        display: none;
+    }
+    #boton-dropdown{
+        font-size: 0.4rem;
+    }
+}
 
     //CONTACTO
 
@@ -447,27 +522,7 @@ footer{
             }
         }
     }
-}
 
-@media screen and (max-width:150px){
-    h1{font-size: $h1 - 2.9;}
-    h2{font-size: $h2 - 2.2;}
-    h3{font-size: $h3 - 1.9}
-    p, input, label{font-size: $p - 0.4;}
-    .contacto-padding{
-        margin: auto;
-        max-height: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 10px;
-        border: 30px;
-        border-radius: 1rem;
-        opacity: 0.85;
-    }
-}
+
+
 
