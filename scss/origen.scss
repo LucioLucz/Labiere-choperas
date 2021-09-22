@@ -88,17 +88,20 @@ $mobile:320px;
     align-content: center;
     align-items: center;
     width: 100%;
+    //min-width: 60px;
     margin: 0;
     padding: 1%;
-    height: 100%;
-    max-height: auto;
+    //height: 100%;
+    height: 80vh;
+    min-height: 505px;
+    max-height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     .divs-nuestras-cervezas{
         max-width: 40%;
         min-width: 100px;
-        max-height: 60%;
-        height: 60%;
+        max-height: 70%;
+        height: 70%;
         text-align:center;
         margin: 0%;
         display: flex;
@@ -381,30 +384,30 @@ footer{
     }
     .logo-header-background{
         width: 100%;
-        //max-width: 27%;
         max-height: 100%;
         }
     .logo-header{
     width: 100%;
     max-width: 100%;
-    //height: auto;
     max-height: 100%;}
+
     #main-nuestras-cervezas{
         flex-direction: column;
         .divs-nuestras-cervezas{
-            max-width: 40%;
-            min-width: 59px;
-            max-height: 45%;
+            max-width: 70%;
+            min-width: 65px;
+            max-height: 48%;
             .logo-antares, .logo-goyeneche{
-                max-width:20vw ;
+                max-width:100% ;
             }
             .divs-nuestras-cervezas-p{
                 .p-cervezas{
                     font-size: 0.6rem;
-                }
-            }
+             }
+           }
         }
     }
+
     .section-servicios{
         display: flex;
         flex-flow: column nowrap;
@@ -463,6 +466,7 @@ footer{
         }
     }
 }
+
 @media screen and (max-width:150px){
         h1{font-size: $h1 - 2.9;}
         h2{font-size: $h2 - 2.2;}
@@ -502,6 +506,26 @@ footer{
             max-width: 100%;
             height: auto;
         }
+
+        #main-nuestras-cervezas{
+            flex-direction: column;
+            .divs-nuestras-cervezas{
+                max-width: 48px;
+                min-width: 40px;
+                max-height: 48%;
+                .logo-antares, .logo-goyeneche{
+                    max-width:40px;
+                    margin: 0;
+                    padding: 0%;
+                }
+                .divs-nuestras-cervezas-p{
+                    .p-cervezas{
+                        font-size: 0.5rem;
+                 }
+               }
+            }
+        }
+
         footer{
             flex-flow: column nowrap;
             justify-content: center;
@@ -537,6 +561,29 @@ footer{
     }
     #boton-dropdown{
         font-size: 0.4rem;
+    }
+    //NUESTRAS CERVEZAS
+    
+    #main-nuestras-cervezas{
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        max-width: 51px;
+        .divs-nuestras-cervezas{
+            max-width: 46px;
+            max-height: 48%;
+            padding: 0px;
+            .logo-antares, .logo-goyeneche{
+                max-width:25px ;
+            }
+            .divs-nuestras-cervezas-p{
+                .p-cervezas{
+                    height: 90%;
+                    font-size: 0.4rem;
+             }
+           }
+        }
     }
     //CONTACTO
 
