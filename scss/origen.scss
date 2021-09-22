@@ -44,6 +44,7 @@ $mobile:320px;
         animation-duration: 2.5s;
         animation-iteration-count: 1;
         height: 85vh;
+        min-height: 450px;
         padding: 1%;
         .contenedor-ico-p{
             display: flex;
@@ -56,6 +57,7 @@ $mobile:320px;
             background-position: fixed;
             padding: 1%;
             border-radius: 1em;
+            /*position: static;*/
             .div-iconos-servicios{
                 display: flex;
                 flex-direction: row;
@@ -148,6 +150,7 @@ $mobile:320px;
     margin: auto;
     max-height: 350px;
     max-width: 100%;
+    min-height: 450px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -213,6 +216,7 @@ footer{
     margin-bottom: 0%;
     padding-top:2% ;
     position: bottom;
+    padding-bottom: 2%;
 }
 
 .divs-footer{
@@ -229,7 +233,6 @@ footer{
 .mapa{
     margin: 0%;
     width: 75%;
-
     max-height: 100%;
 }
 
@@ -347,6 +350,19 @@ footer{
             }
         }
     }
+    footer{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        .divs-footer{
+            width: 75%;
+            max-height: 20%;
+            .mapa{
+                max-height: 150px;
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $mobile){
@@ -433,11 +449,24 @@ footer{
             }
         }
     }
+    footer{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        .divs-footer{
+            width: 75%;
+            max-height: 20%;
+            .mapa{
+                max-height: 100px;
+                max-width: 100%;
+            }
+        }
+    }
 }
 @media screen and (max-width:150px){
         h1{font-size: $h1 - 2.9;}
         h2{font-size: $h2 - 2.2;}
-        h3{font-size: $h3 - 1.9}
+        h3{font-size: $h3 - 1.4}
         p, input, label, #a-dropdown{font-size: $p - 0.5;}
         .dropdown{
             padding: 9%;
@@ -473,24 +502,42 @@ footer{
             max-width: 100%;
             height: auto;
         }
+        footer{
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .divs-footer{
+                width: 75%;
+                max-height: 20%;
+                .mapa{
+                    max-height: 70px;
+                    max-width: 100%;
+                }
+            }
+        }
 }
+
 @media screen and (max-width:100px){
     h1{font-size: $h1 - 3;}
-        h2{font-size: $h2 - 2.4;}
-        h3{font-size: $h3 - 2}
-        p, input, label, #a-dropdown{font-size: $p - 0.6;}
-        .dropdown{padding: 15%;}
+    h2{font-size: $h2 - 2.4;}
+    h3{font-size: $h3 - 1.5}
+    p, input, label, #a-dropdown{font-size: $p - 0.6;}
+    .dropdown{padding: 15%;}
+    #h1-nuestras-cervezas{font-size: $h1 - 3.5;}
+    #h1-servicios{font-size: $h1 - 3.4}
+    #h1-galeria{font-size: $h1 - 3.3;}
+    #h1-contacto{font-size: $h1 - 3.3;}
     #header-secciones{
         justify-content: center;
     }
     .logo-header-background{
         display: none;
     }
+    .dropdown{padding:0%
+    }
     #boton-dropdown{
         font-size: 0.4rem;
     }
-}
-
     //CONTACTO
 
     .p-contacto{
@@ -537,6 +584,7 @@ footer{
             }
         }
     }
+}
 
 
 
