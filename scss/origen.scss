@@ -14,6 +14,11 @@ $mobile:320px;
 
 // ******************** ESTILOS  ********************
 
+
+//HEADER
+#dropdown-menu-width{
+    min-width: 4rem;
+}
 // Seccion SERVICIOS
 .section-servicios{
     display: flex;
@@ -295,6 +300,9 @@ footer{
     #boton-dropdown{
         font-size: 0.8rem;
     }
+    #dropdown-menu-width{
+        min-width: 3rem;
+    }
     .section-servicios{
         display: flex;
         flex-flow: column nowrap;
@@ -351,6 +359,9 @@ footer{
     }
     #boton-dropdown{
         font-size: 0.7rem;
+    }
+    #dropdown-menu-width{
+        min-width: 2rem;
     }
     .logo-header-background{
         width: 100%;
@@ -427,12 +438,15 @@ footer{
         h1{font-size: $h1 - 2.9;}
         h2{font-size: $h2 - 2.2;}
         h3{font-size: $h3 - 1.9}
-        p, input, label, #a-dropdown{font-size: $p - 0.4;}
+        p, input, label, #a-dropdown{font-size: $p - 0.5;}
         .dropdown{
-            padding: 8%;
+            padding: 9%;
         }
         #boton-dropdown{
             font-size: 0.6rem;
+        }
+        #dropdown-menu-width{
+            min-width: 0.8rem;
         }
         .contacto-padding{
             margin: auto;
@@ -465,6 +479,7 @@ footer{
         h2{font-size: $h2 - 2.4;}
         h3{font-size: $h3 - 2}
         p, input, label, #a-dropdown{font-size: $p - 0.6;}
+        .dropdown{padding: 15%;}
     #header-secciones{
         justify-content: center;
     }
