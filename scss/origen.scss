@@ -14,7 +14,6 @@ $mobile:320px;
 
 // ******************** ESTILOS  ********************
 
-
 //HEADER
 #dropdown-menu-width{
     min-width: 4rem;
@@ -88,10 +87,8 @@ $mobile:320px;
     align-content: center;
     align-items: center;
     width: 100%;
-    //min-width: 60px;
     margin: 0;
     padding: 1%;
-    //height: 100%;
     height: 80vh;
     min-height: 505px;
     max-height: 100%;
@@ -258,6 +255,7 @@ footer{
 }
 
 // ******************** MEDIA QUERIES ********************
+/* ******************** MEDIA QUERIES ******************** */
 
 @media screen and(min-width:$desktop){
     h1{font-size: $h1;}
