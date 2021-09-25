@@ -445,23 +445,16 @@ padding: 1%;
     height: 600px;
 }
 
-/* GALERÍA */
-/*.galeria-main{
-        font-size: 2rem;
-        width: 100%;
-        height: 600px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-}*/
-
 .galeria-grid{
     display: grid;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     grid-template-rows: repeat(2, 40%);
     grid-template-columns: repeat(4, 20%);
     padding: auto;
+    max-height: 550px;
+    grid-row-gap:1.5%;
 }
 
 .items-galeria{

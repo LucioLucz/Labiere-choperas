@@ -351,6 +351,31 @@ footer{
             }
         }
     }
+    .galeria-grid{
+        padding: 1%;
+        grid-template-rows: repeat(4, 20%);
+        grid-template-columns: repeat(2, 40%);
+        grid-column-gap:0%;
+        padding: auto;
+        padding-top: 10%;
+        align-content: flex-start;
+        justify-items: space-between;
+        .items-galeria{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            width: 70%;
+            max-width: 130px;
+            max-height: 90%;
+            padding: 10%;
+            justify-self: center;
+        }
+        .imgs-galeria{
+            width: 90%;
+            max-width: 120px;
+            border: solid black 0.2rem;
+        }
+    }
     footer{
         flex-flow: column nowrap;
         justify-content: center;
@@ -450,6 +475,29 @@ footer{
             }
         }
     }
+
+    .galeria-grid{
+        padding: 1%;
+        grid-template-rows: repeat(4, 20%);
+        grid-template-columns: repeat(2, 50%);
+        padding: auto;
+        padding-top: 10%;
+        align-content: flex-start;
+        justify-items: space-between;
+        .items-galeria{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            max-width: 80%;
+            max-height: 90%;
+            padding: 10%;
+            justify-self: center;
+        }
+        .imgs-galeria{
+            max-width: 90%;
+            border: solid black 0.2rem;
+        }
+    }
     footer{
         flex-flow: column nowrap;
         justify-content: center;
@@ -458,12 +506,42 @@ footer{
             width: 75%;
             max-height: 20%;
             .mapa{
-                max-height: 100px;
+                max-height: 150px;
                 max-width: 100%;
             }
         }
     }
 }
+
+@media screen and (max-width:200px) {
+    .secciones-main-galeria{
+        height: 500px;
+        max-height: 500px;
+    }
+    .galeria-grid{
+        padding: 1%;
+        grid-template-rows: repeat(4, 20%);
+        grid-template-columns: repeat(2, 45%);
+        padding: auto;
+        padding-top: 10%;
+        align-content: flex-start;
+        justify-items: space-between;
+        .items-galeria{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            max-width: 80%;
+            max-height: 90%;
+            padding: 10%;
+            justify-self: center;
+        }
+        .imgs-galeria{
+            max-width: 90%;
+            border: solid black 0.2rem;
+        }
+    }
+}
+
 
 @media screen and (max-width:150px){
         h1{font-size: $h1 - 2.9;}
@@ -596,6 +674,30 @@ footer{
         flex-flow: column nowrap;
         textarea{
             max-height: 50px;
+        }
+    }
+    .secciones-main-galeria{
+        height: 500px;
+        max-height: 500px;
+    }
+    .galeria-grid{
+        padding: 1%;
+        grid-template-rows: repeat(8, 12%);
+        grid-template-columns: repeat(1, 90%);
+        grid-row-gap:0%;
+        padding: auto;
+        padding-top: 1%;
+        align-content: flex-start;
+        justify-items: space-between;
+        .items-galeria{
+            max-width: 80%;
+            max-height: 90%;
+            padding: 10%;
+            justify-self: center;
+        }
+        .imgs-galeria{
+            max-width: 90%;
+            border: solid black 0.2rem;
         }
     }
     
