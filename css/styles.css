@@ -234,7 +234,7 @@ h1,h2,h3,p,a{
     animation-iteration-count: 1;
 }
 
-.secciones-main-galeria{
+/*.secciones-main-galeria{
     background-attachment: fixed;
     background-position: center;
     position: center;
@@ -247,6 +247,20 @@ h1,h2,h3,p,a{
     height: 100vh;
     width: 100%;
     margin-right: 0;
+    animation-name: opacidad ;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}*/
+.secciones-main-galeria{
+    background-attachment: fixed;
+    background-position: center;
+    position: center;
+    display:grid;
+    height: 85vh;
+    width: 100%;
+    padding: auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
     animation-name: opacidad ;
     animation-duration: 2.5s;
     animation-iteration-count: 1;
@@ -432,27 +446,36 @@ padding: 1%;
 }
 
 /* GALERÍA */
-.galeria-main{
+/*.galeria-main{
         font-size: 2rem;
         width: 100%;
         height: 600px;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+}*/
+
+.galeria-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: repeat(2, 40%);
+    grid-template-columns: repeat(4, 20%);
+    padding: auto;
 }
 
-.galeria{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 1rem;
-    width: 80%;
-    max-width: 80%;
-    height: auto;
-    max-height: 360px;
-    padding: 1%;}
+.items-galeria{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    max-height: 100%;
+    padding: 5%;
+}
+
+.imgs-galeria{
+    max-width: 100%;
+    border: solid black 0.3rem;
+}
 
 .margin-lightbox{
     margin: 1%;
