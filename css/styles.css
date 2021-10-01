@@ -119,6 +119,8 @@ ul{
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
+    min-height: 500px;
 }
 
 /* ESTILOS GRID */
@@ -234,29 +236,13 @@ h1,h2,h3,p,a{
     animation-iteration-count: 1;
 }
 
-/*.secciones-main-galeria{
-    background-attachment: fixed;
-    background-position: center;
-    position: center;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    height: 100vh;
-    width: 100%;
-    margin-right: 0;
-    animation-name: opacidad ;
-    animation-duration: 2.5s;
-    animation-iteration-count: 1;
-}*/
 .secciones-main-galeria{
     background-attachment: fixed;
     background-position: center;
     position: center;
     display:grid;
     height: 85vh;
+    min-height: 525px;
     width: 100%;
     padding: auto;
     grid-column-gap: 5%;
@@ -292,6 +278,7 @@ h1,h2,h3,p,a{
     background-repeat: no-repeat;
     max-width: 100%;
     max-height: 100%;
+    min-height: 450px;
     background-size: cover;
     opacity: 1;
     bottom: 100px;
@@ -374,6 +361,8 @@ h1,h2,h3,p,a{
     align-items: center;
     align-content: center;
     width: 100vh;
+    min-height: 500px;
+    background-attachment: fixed;
 }
 
 .divs-nuestras-cervezas{
@@ -392,6 +381,7 @@ h1,h2,h3,p,a{
     border-radius: 1rem;
     padding:2%;
     box-sizing: border-box;
+    background-attachment: fixed;
 }
 
 .divs-nuestras-cervezas-p{
