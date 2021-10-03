@@ -92,26 +92,25 @@
 
                     <!-- Formulario -->
                     <div class="contacto-form">
-                        <div>
-                            <form action="" method="POST" enctype="text/plain">
-                            <label for="name">Nombre</label>
-                            <input type="text" name="name" placeholder="Nombre completo">
- 
-                            <label for="cel-number">Teléfono</label>
-                            <input type="text" name="cel-number" placeholder="Numero de teléfono">
- 
-                            <label for="email">Email</label>
-                            <input type="email" name="email" placeholder="Tu correo electrónico">
-                        </div> 
-                         
-                        <div>
-                            <label for="message">Mensaje</label>
-                            <textarea class="textarea-contacto" name="mesagge" id="" cols="30" rows="10">Tu mensaje</textarea>
-                            </form>
-                            <!-- <div> -->
-                            <input class="boton-enviar" type="submit" value="Enviar">
-                            <!-- </div>  -->
-                        </div>
+                        <!-- <form action="mailto:lucio.luczka1@gmail.com" method="POST" enctype="text/plain"> -->
+                            <form action="enviar.php" method="POST" enctype="text/plain">
+                            <div>    
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name" placeholder="Nombre completo">
+    
+                                <label for="cel-number">Teléfono</label>
+                                <input type="text" name="cel-number" placeholder="Numero de teléfono">
+    
+                                <label for="email">Email</label>
+                                <input type="email" name="email" placeholder="Tu correo electrónico">
+                            </div> 
+
+                            <div>
+                                <label for="message">Mensaje</label>
+                                <textarea class="textarea-contacto" name="mesagge" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+                                <input class="boton-enviar" type="submit" value="Enviar">
+                            </div>
+                        </form>
                     </div>
                  </div>
              </div>
